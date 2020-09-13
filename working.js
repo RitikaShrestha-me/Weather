@@ -1,3 +1,4 @@
+// On-load
 window.addEventListener('load',()=>{
 	let longitude;
 	let latitude;
@@ -7,6 +8,7 @@ window.addEventListener('load',()=>{
 	let tempSection = document.querySelector(".temperature");
 	const tempSpan = document.querySelector(".temperature span");
 
+	// Getting position of location
 	if(navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(position=>{
 			longitude = position.coords.longitude;
