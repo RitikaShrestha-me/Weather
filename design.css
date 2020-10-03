@@ -1,46 +1,77 @@
-body {
-	height: 100vh;
-	background: linear-gradient(rgb(40,90,180),rgb(60,120,160),rgb(40,20,20));
-	background-repeat: no-repeat;
-	color: white;
-	font-family: serif;
-	display: flex; 
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box; 
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.location, .temperature{
-	height: 30vh;
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+html {
+  font-size: 10px;
 }
 
-.temperature{
-	flex-direction: column;
+
+body {
+  height: 100vh;
+  /* background: linear-gradient(
+    rgb(40, 90, 180),
+    rgb(60, 120, 160),
+    rgb(40, 20, 20)
+  ); */
+  background-image: url("https://www.kindpng.com/picc/m/51-515698_iphone-frame-png-iphone-x-transparent-background-png.png");
+  background-color: #f7f7f7;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.degree-section{
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	justify-content: space-around;
+.location,
+.temperature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.degree-section span{
-	display: flex;
-	margin: 10px;
-	font-size: 20px;
+.location h2 {
+  font-size: 2.2rem;
 }
 
-.degree-section h1{
-	font-size: 60px;
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.degree-section span {
+  display: flex;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.degree-section h1 {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.temperature-description,
+.temperature-description-mood {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.temperature-description-mood {
+  font-size: 1.6rem;
 }
